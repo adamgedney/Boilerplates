@@ -1,0 +1,348 @@
+/* ======================================= */
+/* General/Container */
+/* ======================================= */
+.heading{
+	position: relative;
+	display: block;
+	margin: 16px 0;
+}
+
+.heading > * {
+	display: inline-block;
+	background: white;
+	position: relative;
+	z-index: 2;
+	padding: 0 22px 0 0;
+	line-height: 100%;
+	vertical-align: bottom;
+}
+
+.heading.center > * {
+	padding: 0 22px;
+}
+
+
+.heading:before,
+#block-views-whats-happening-block:before{
+	content: ' ';
+	background: #8e8e8e;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	z-index: 1;
+}
+
+#block-views-whats-happening-block:before{
+	left: 57%;
+	width: 44%;
+	bottom: 15px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	display: block;
+	max-width: 1200px;
+	width: 100%;
+	position: relative;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+/* ======================================= */
+/* Nav -for drupal */
+/* ======================================= */
+/*nav {
+	background: white;
+	padding: 20px 0;
+}
+
+nav .logo {
+	float: left;
+}
+
+nav .logo img{
+	box-shadow:none;	
+}
+
+nav .social {
+	position: absolute;
+	right: -2px;
+	top: 0;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+nav .social a {
+	padding: 8px 2px;
+	display: inline-block;
+	opacity: 1;
+	transition: opacity 0.1s, -webkit-transform 0.1s;
+	-webkit-transform:scale(1) translate3d(0,0,0);
+
+}
+
+nav .social a:hover {
+	opacity: 0.65;
+}
+
+nav ul,
+nav .content ul li{
+	list-style: none;
+	margin:0;
+}
+
+nav .main-menu {
+	float: right;
+	vertical-align: middle;
+}
+
+nav .main-menu .content > ul {
+	text-transform: uppercase;
+	padding: 56px 0 0;
+}
+
+nav .main-menu .content a {
+	font-size: 18px;
+	color: #8e8e8e;
+	text-decoration: none;
+	font-weight: 300;
+	letter-spacing: 3px;
+	white-space: nowrap;
+	transition: color 0.15s;
+}
+
+nav .main-menu .content > ul > li {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 22px;
+	margin-bottom: -22px;
+}
+
+nav .main-menu .content > ul > li > a:hover {
+	color: #7ac83c;
+}
+
+nav .main-menu .content > ul > li:before {
+	content: "\00b7";
+	font-size: 10px;
+	font-weight: 300;
+	display: inline-block;
+	padding: 0 20px;
+	position: relative;
+	top: -3px;
+}
+
+nav .main-menu .content > ul:nth-of-type(1) > li:nth-of-type(1):before {
+	content: none;
+}
+
+nav .main-menu .content > ul > li > ul {
+	position: absolute;
+	top: 46px;
+	background: white;
+	z-index: 10;
+	border-top: 1px solid #dedede;
+	box-shadow: 0 2px 2px rgba(10,10,10,0.3);
+	visibility: hidden;
+	margin-left:-20px;
+}
+
+nav .main-menu .content > ul > li:hover > ul {
+	visibility: visible;
+}
+
+nav .main-menu .content > ul > li > ul > li {
+	position: relative;
+}
+
+nav .main-menu .content > ul > li > ul li a {
+	padding: 9px 20px;
+	background: white;
+	color: #8e8e8e;
+	display: block;
+	transition: color 0s;
+}
+
+nav .main-menu .content > ul > li > ul li a:hover {
+	background: #7ac83c;
+	color: white;
+}
+
+nav .main-menu .content > ul > li > ul > li > ul {
+	position: absolute;
+	left: 100%;
+	background: white;
+	top: -1px;
+	border-top: 1px solid #dedede;
+	box-shadow: 2px 2px 2px rgba(10,10,10,0.3);
+	visibility: hidden;
+	border-left:#7ac83c 2px solid;
+}
+
+nav .main-menu .content > ul > li > ul > li:hover > ul {
+	visibility: visible;
+}
+
+nav .main-menu .content > ul > li > ul > li > a:hover + ul:before{
+	content:url('../images/nav-sub-hover.png');
+	position:absolute;
+	top:0;
+	left:0;	
+}
+
+nav .main-menu .content > ul > li > ul > li > ul > li > a{
+	padding: 9px 26px;	
+}
+*/
+
+
+
+
+
+
+
+
+// remove after dev
+#nav {
+	background: white;
+	padding: 20px 0;
+}
+#nav .logo {
+	float: left;
+}
+
+#nav .logo img
+{
+	box-shadow:none;	
+}
+
+#nav .social {
+	position: absolute;
+	right: -2px;
+	top: 0;
+	-webkit-transform: translate3d(0,0,0);
+
+	img{
+		box-shadow: none;
+	}
+}
+#nav .social a {
+	padding: 8px 2px;
+	display: inline-block;
+	opacity: 1;
+	transition: opacity 0.1s, -webkit-transform 0.1s;
+	-webkit-transform:scale(1) translate3d(0,0,0);
+
+}
+#nav .social a:hover {
+	opacity: 0.65;
+}
+
+#nav ul
+{
+	list-style: none;
+	margin:0;
+}
+
+#nav .main-menu {
+	float: right;
+	vertical-align: middle;
+}
+#nav .main-menu > ul {
+	text-transform: uppercase;
+	padding: 56px 0 0;
+}
+#nav .main-menu a {
+	font-size: 18px;
+	color: #8e8e8e;
+	text-decoration: none;
+	font-weight: 300;
+	letter-spacing: 3px;
+	white-space: nowrap;
+	transition: color 0.15s;
+}
+#nav .main-menu > ul > li {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 22px;
+	margin-bottom: -22px;
+}
+#nav .main-menu > ul > li > a:hover {
+	color: #7ac83c;
+}
+#nav .main-menu > ul > li:before {
+	content: "\00b7";
+	font-size: 10px;
+	font-weight: 300;
+	display: inline-block;
+	padding: 0 20px;
+	position: relative;
+	top: -3px;
+}
+#nav .main-menu > ul:nth-of-type(1) > li:nth-of-type(1):before {
+	content: none;
+}
+#nav .main-menu > ul > li > ul {
+	position: absolute;
+	top: 46px;
+	background: white;
+	z-index: 10;
+	border-top: 1px solid #dedede;
+	box-shadow: 0 2px 2px rgba(10,10,10,0.3);
+	visibility: hidden;
+	margin-left:-20px;
+}
+#nav .main-menu > ul > li:hover > ul {
+	visibility: visible;
+}
+#nav .main-menu > ul > li > ul > li {
+	position: relative;
+}
+#nav .main-menu > ul > li > ul li a {
+	padding: 9px 20px;
+	background: white;
+	color: #8e8e8e;
+	display: block;
+	transition: color 0s;
+}
+#nav .main-menu > ul > li > ul li a:hover {
+	background: #7ac83c;
+	color: white;
+}
+#nav .main-menu > ul > li > ul > li > ul {
+	position: absolute;
+	left: 100%;
+	background: white;
+	top: -1px;
+	border-top: 1px solid #dedede;
+	box-shadow: 2px 2px 2px rgba(10,10,10,0.3);
+	visibility: hidden;
+	border-left:#7ac83c 2px solid;
+}
+#nav .main-menu > ul > li > ul > li:hover > ul {
+	visibility: visible;
+}
+
+#nav .main-menu > ul > li > ul > li > a:hover + ul:before
+{
+content:url('../images/nav-sub-hover.png');
+position:absolute;
+top:0;
+left:0;	
+}
+
+#nav .main-menu > ul > li > ul > li > ul > li > a
+{
+padding: 9px 26px;	
+}
+
+
+
+

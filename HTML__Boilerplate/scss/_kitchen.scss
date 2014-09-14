@@ -1,0 +1,196 @@
+/* ======================================= */
+/* Kitchen Page */
+/* ======================================= */
+.kitchen-banner{
+	max-height: 850px;
+
+	.banner-inner{
+
+		.col1{
+
+			h2{
+				margin-bottom: 42px;
+			}
+
+			p{
+				margin-bottom: 27px;
+			}
+			
+
+		}
+
+		.col2{
+			padding-top: 57px;
+
+			h3{
+				border-bottom: 1px solid $bg;
+				padding-left: 18px;
+				padding-bottom: 9px;
+				margin-bottom: 9px;
+				text-align: center;
+			}
+
+			aside{
+				img{
+					width: 281px;
+					height: 121px;
+					height: auto;
+				}
+
+				.s-button{
+
+					span{
+						bottom: 33px;
+					}
+
+					&:after{
+						bottom: 58px;
+					}
+
+					&:nth-of-type(1) {
+						margin-left: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.collection-block{
+	margin: 76px 0;
+
+	>a{
+		border-bottom: 1px solid $link;
+		font-size: 14px;
+		font-style: italic;
+	}
+}
+
+.thumb-slider{
+	position: relative;
+	width: 100%;
+
+	a{
+		width: 18%;
+		margin-right: 18px;
+		height: auto;
+		display: inline-block;
+		padding: 0 .5% 0 0;
+
+		img{
+			box-shadow: none;
+			max-width: 100%;
+		}
+
+		&:nth-child(5){
+			padding-right: 0;
+			margin-right: 0;
+		}
+
+		&:hover{
+			opacity: .7;
+		}
+	}
+
+	&:after{
+		content: url('../images/label-corner.png');
+		position: absolute;
+		bottom: 75px;
+		right: 5px;
+		-ms-transform: scale(-1,1); /* IE 9 */
+    -webkit-transform: scale(-1,1); /* Chrome, Safari, Opera */
+    		transform: scale(-1,1);
+	}
+}
+
+.thumb-slider-arrow{
+	position: absolute;
+	right: 5px;
+	bottom: 39px;
+	width: 47px;
+	height: 42px;
+
+	&:hover{
+		opacity: .8;
+		cursor: pointer;
+	}
+}
+
+
+.kitchen-content{
+	overflow: hidden;
+	padding-bottom: 27px;
+
+	.col1, .col2{
+		width: 45%;
+		padding: 27px 27px 0;
+	}
+
+	.col1{
+		border-right: 1px solid $border;
+		padding: 27px;
+
+		h3{
+			font-weight: 100;
+			font-size: 28px;
+		}
+
+		p{
+			font-weight: 300;
+			padding-right: 27px;
+
+			a{
+				font-weight: 400;
+			}
+		}
+	}
+
+	.col2{
+		padding-top: 30px;
+
+		.link-container{
+			width: 80%;
+			margin: 0 10% 9px;
+			display: block;
+			padding: 18px;
+			border: 1px solid $border;
+			text-align: center;
+			color: $tertiary-text;
+			border-radius: 5px;
+			font-size: 24px;
+			font-weight: 300;
+
+			background: -moz-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(214,214,214,0.4) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(214,214,214,0.4))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(214,214,214,0.4) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(214,214,214,0.4) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(214,214,214,0.4) 100%); /* IE10+ */
+			background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(214,214,214,0.4) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ffffff', endColorstr='#66d6d6d6',GradientType=0 ); /* IE6-9 */
+		
+		&:hover{
+			opacity: .7;
+			cursor: pointer;
+		}
+
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

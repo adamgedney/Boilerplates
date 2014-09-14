@@ -1,0 +1,74 @@
+/* ======================================= */
+/* Content */
+/* ======================================= */
+#content .content{
+	width:845px;	
+	display:inline-block;
+	float: left;
+}
+
+#content .sidebar{
+	width:265px;
+	float:right;	
+	display:inline-block;
+	margin-top:12px;
+}
+
+#content .sidebar.left{
+	float:left;	
+	margin-right:100px;
+}
+
+#content .sidebar.right{
+	float:right;	
+}
+
+
+#content .sidebar .content > div{
+	margin-bottom: 30px;	
+}
+
+#content .article{
+	margin-bottom: 30px;
+}
+
+#content .article > a {
+	float:left;
+	padding-right: 20px;
+	position: relative;
+}
+
+#content .article > .details{
+}
+
+#content .article > .details h4 a{
+	display:inline-block;
+	margin-left:-20px;
+	color:white;
+	background:#578a2f;
+	padding: 0px 20px;
+	text-transform:uppercase;
+	font-weight:600;
+	margin-bottom: 10px;
+}
+
+#content .article > .details h3{	
+	
+}
+
+
+
+
+
+/* ======================================= */
+/* Overrides */
+/* ======================================= */
+#banner, #before-content, #content{
+	margin-bottom: 30px;	
+}
+
+
+
+
+
+

@@ -1,0 +1,196 @@
+/* ======================================= */
+/* Photos Page */
+/* ======================================= */
+.sm-banner{
+	background:url('images/photos/banner-bg.png');
+	position: relative;
+	max-height: 190px;
+
+	img{
+		width: 100%;
+	}
+}
+
+.banner-filter{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.banner-inner{
+	text-align: center;
+	position: absolute;
+	top: 57px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	white-space: nowrap;
+
+	h2, h3{
+		color: $wht-text;
+	}
+
+	h3{
+		font-size: 21px;
+		font-weight: 300;
+		letter-spacing: 5px;
+		padding-bottom: 0;
+	}
+
+	h2{
+		&:before, &:after{
+			content : '';
+			position: absolute;
+			bottom: 11px;
+			left: 0;
+			display: block;
+			width: 26%;
+			height: 1px;
+			background: $bg;
+		}
+
+		&:after{
+			right: 0;
+			left: initial;
+		}
+	}
+}
+
+.photos-banner{
+	.banner-inner{
+		h2{
+			&:before, &:after{
+				width: 20%;
+			}
+		}
+	}
+}
+
+/*.banner-inner-pre, 
+.banner-inner-post{
+	background: $wht-text;
+	width: 18%;
+	height: 1px;
+	position: absolute;
+	bottom: 66px;
+	left: 6%;
+	z-index: 1;
+}
+
+.banner-inner-post{
+	right: 10%;
+	left: 76.5%;
+}*/
+
+
+
+
+
+.photos-item{
+	overflow: hidden;
+	margin-bottom: 39px;
+
+	&:first-child{
+		margin-top: 60px;
+	}
+		
+	a img{
+		box-shadow: none;
+	}
+
+	p{
+		font-size: 13px;
+		margin-bottom: 0;
+		line-height: 150%;
+	}
+
+	.photo{
+		width: 65%;
+		display: block;
+		float: left;
+		margin-right: 33px;
+	}
+
+	.caption-text{
+		font-style: italic;
+		font-weight: 100;
+		font-size: 14px;
+		line-height: 150%;
+	}
+
+	h3, h4, .photos-author{
+		text-transform: capitalize;
+	}
+
+	h4{
+		text-transform: lowercase;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 100%;
+	}
+
+	h3, .photos-author{
+		color: $link;
+	}
+
+	.photos-author{
+		font-weight: 400
+	}
+}
+
+.photos-social{
+	margin: 24px 0;
+
+	a{
+		display: inline-block;
+		width: 3%;
+		font-size: 12px;
+		font-weight: 300;
+		color: $primary-text;
+		overflow: hidden;
+
+		img{
+			vertical-align:middle;
+		}
+
+		&:nth-child(5),
+		&:nth-child(6){
+			width: 7%;
+
+			img{
+				margin-right: 3px;
+			}
+		}
+
+		&:hover{
+			opacity: .5;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
