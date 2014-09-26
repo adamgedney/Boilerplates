@@ -1,8 +1,12 @@
-/* 	Copyright Adam Gedney 12/2/13
-	contact: adam.gedney@gmail.com
-	http://adamgedney.com
 
-"Good UI design is humble.” – Jono DiCarlo
+
+/* CLEARFIX */
+
+nav:after, #nav:after, #content .article:after, #content:after {
+	display: block;
+	content: ' ';
+	clear: both;
+}
 
 
 

@@ -1,104 +1,100 @@
-/*--------------------------------------End CSS Reset / Start General-------------------------------*/
+/*--------------------------------------Defaults--------------------------------*/
+html, body {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	text-rendering: optimizeLegibility;
+	line-height: 165%;
+	background: #ffffff;
+	color: #8e8e8e;
+}
 
-
-// Baseline grid: 3px
-
-
-
-//border box borrowed from responsive.gs
-* { -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+p, ul, ol {
+margin: 2px 0 14px;
+}
+ul
+{
+	list-style: square;
+}
+ol
+{
+	list-style: decimal;
+}
+ul,ol
+{
+	margin-left: 45px;
 }
 
 
-body{
-	color: $dark-grey;
-	font: 62.5% 'Merriweather', "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-	-webkit-font-smoothing: antialiased;
+a
+{
+	color:#55b707;
+	text-decoration:none;
+}
+a:hover
+{
+	color:#7ac83c;
 }
 
-h1, h2, h3, h4{
-	font-family: 'Open Sans', "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+a img
+{
+box-shadow: 4px 6px 0px rgba(7,7,7,0.1);	
 }
 
-h1{
-	font-size: 3.6em; /*18x4*/
-	line-height: 1.5;
-}
-
-h2{
-	font-size: 2.4em;/*18x3*/
-	line-height: 1.5;
-}
-
-h3{
-	font-size: 1.6em;/*18x2 - 6*/
-	line-height: 1.5;
-}
-
-p, ul, dl{
-	font-size: 1.6em;
+h2 {
 	font-weight: 100;
-	line-height: 1.5;
-	margin-bottom: 20px;
-}
-
-
-ul{
-	line-height: 1.5;
-}
-
-a{
-	cursor: pointer;
-}
-
-a, input[type="submit"]{
-	text-decoration: none;
-	color: $blue;
-	opacity: 1;
-	outline: none;
-	-webkit-appearance: none;/*overrides safari mobile default styling*/
-}
-
-a:visited{
-	outline: none;
-}
-
-a:hover, input[type="submit"]:hover{
-	opacity: .5;
-}
-
-a.no-tran:hover{
-	opacity: 1;
-}
-
-img{
-	max-width: 100%;
-}
-
-input, button, textarea{
-	border: none;
-	border: 1px solid $light-grey;
-	border-radius: 2px;
-	height: 30px;
+	font-size: 34px;
+	text-transform: uppercase;
 	display: block;
-	margin-bottom: 9px;
-	padding: 9px;
-	font-size: 1.6em;
-	font-weight: 100;
-	outline: none;
+	letter-spacing: 9px;
+	line-height: 165%;
 }
 
-::-webkit-input-placeholder { /* WebKit browsers */
-    color: $light-grey;
+h3 {
+font-size: 26px;
+font-weight: 300;
+line-height:120%;
+padding-bottom: 11px;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: $light-grey;
+
+h4
+{
+text-transform:uppercase;
+	font-weight:600;	
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: $light-grey;
+strong, b
+{
+font-weight:bold;	
 }
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: $light-grey;
+em, i
+{
+font-style:italic;	
 }
+
+input, textarea{
+	border: none;
+	height: 39px;
+}
+
+
+
+
+
+
+.lite-text{
+	font-weight: 100;
+}
+
+.col1, .col2{
+	float: left;
+}
+
+.disp-block{
+	display: block;
+}
+
+
+
+
+
+
+

@@ -1,41 +1,26 @@
-/*
-	Thanks for checking out my code!!
 
 
-	Copyright Adam Gedney 2/15/14
-	contact: adam.gedney@gmail.com
-	http://adamgedney.com
 
-"Good UI design is humble.” – Jono DiCarlo
-*/
-/*
+/* ======================================= */
+/* Scss Stylesheet imports */
+/* ======================================= */
+/* Libs */
+@import "libs/susy";
+@import "libs/susyone";
 
-
-----------------SASS------------------*/
-$white: #fff;
-$off-white: #f6f6f6;
-$light-grey: #e8e8e8;
-$med-grey: #969696;
-$dark-grey: #333333;
-$black: #000;
-$dark-red: #990100;
-$light-red: #b90504;
-$blue: #0971b2;
-$yellow: #fffc19;
-
-/*----Sass imports----*/
+@import "color";
 @import "util";
 @import "reset";
 @import "defaults";
+@import "header";
+@import "parts";
+@import "content";
+@import "footer";
 
-
-
-
-/*--------------------------------------End General / Start Objects------------------------------------*/
-
-
-
-/*--------------------------------------End Objects / Start Main------------------------------------*/
+@import "photos";
+@import "about";
+@import "contact";
+@import "kitchen";
 
 
 
