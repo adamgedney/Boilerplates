@@ -1,0 +1,19 @@
+/* ======================================= */
+/* Form default styling */
+/* ======================================= */
+
+form{
+	height: 100vh;
+	margin: 0 auto;
+
+	input{
+		@include span-columns(8);
+		border-radius: 5px;
+		height: 45px;
+		display: inline-block;
+
+		&[type='submit']{
+			@include span-columns(4);
+		}
+	}
+}

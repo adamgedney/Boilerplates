@@ -1,0 +1,28 @@
+/* ======================================= */
+/* Above the fold - page #1 */
+/* ======================================= */
+
+form{
+	height: 100vh;
+	margin: 0 auto;
+
+
+	input{
+		@include span-columns(8);
+		border-radius: 5px;
+		border: 1px solid $primary-text;
+		height: 45px;
+		display: inline-block;
+
+		&[type='submit']{
+			@include span-columns(4);
+		}
+	}
+}
+
+
+#response{
+	padding: 72px 25%;
+	background: #fff;
+	color: #333;
+}
