@@ -2,12 +2,6 @@
 /* Scss Stylesheet imports */
 /* ======================================= */
 /* Libs */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 /* Utility */
 /*----------------COLOR------------------*/
 /* CLEARFIX */
@@ -88,21 +82,27 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5em;
-  color: #ffffff;
+  color: #1d252c;
   background: url("../images/church.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   /* Dark Filter effect */
+  /*	&:after{
+  		content : '';
+  		position: absolute;
+  		top: 0;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		z-index: -1;
+  		background: rgba(0,0,0,.5);
+  	}*/
 }
-body:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  background: rgba(0, 0, 0, 0.5);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -179,44 +179,38 @@ textarea {
 
 ::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: #ffffff;
+  color: #1d252c;
   font-weight: 100;
 }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #ffffff;
+  color: #1d252c;
   font-weight: 100;
 }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #ffffff;
+  color: #1d252c;
   font-weight: 100;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
-  color: #ffffff;
+  color: #1d252c;
   font-weight: 100;
 }
 
 /* ======================================= */
 /* layout */
-/* Reference Bourbon Neat for layout grid */
-/* http://neat.bourbon.io/examples/ */
 /* ======================================= */
-.page .page-inner {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
-  height: 800px;
+.page {
+  background: #1d252c;
+  min-height: 800px;
   height: 100vh;
 }
-.page .page-inner:last-child {
-  margin-right: 0;
+.page:nth-of-type(even) {
+  background: #fff;
 }
 
 /* Elements */
@@ -228,98 +222,26 @@ form {
   margin: 0 auto;
 }
 form input {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
   border-radius: 5px;
   height: 45px;
   display: inline-block;
 }
-form input:last-child {
-  margin-right: 0;
-}
-form input[type='submit'] {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
-}
-form input[type='submit']:last-child {
-  margin-right: 0;
-}
 
 /* Partials */
 /* ======================================= */
-/* General/Container */
+/* Header */
 /* ======================================= */
 header {
-  overflow: hidden;
-  padding: 18px 2%;
-}
-header h1 {
-  font-weight: 100;
-  color: #6987A1;
-  display: inline-block;
-}
-header nav {
-  float: right;
-}
-header nav ul li {
-  display: inline-block;
-  margin-left: 18px;
-}
-
-.sign-up input {
-  display: inline-block;
-  font-size: 1em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 19px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* ======================================= */
 /* Footer */
 /* ======================================= */
 /* Pages */
-/* ======================================= */
-/* Above the fold - page #1 */
-/* ======================================= */
-.primary-cta > span {
-  font-size: 2.1em;
-}
-
-/* ======================================= */
-/* Above the fold - page #1 */
-/* ======================================= */
-form {
-  height: 100vh;
-  margin: 0 auto;
-}
-form input {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  border-radius: 5px;
-  border: 1px solid #ffffff;
-  height: 45px;
-  display: inline-block;
-}
-form input:last-child {
-  margin-right: 0;
-}
-form input[type='submit'] {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
-}
-form input[type='submit']:last-child {
-  margin-right: 0;
-}
-
-#response {
-  padding: 72px 25%;
-  background: #fff;
-  color: #333;
-}
 
 /*# sourceMappingURL=main.css.map */

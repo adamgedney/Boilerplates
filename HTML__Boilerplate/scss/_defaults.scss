@@ -14,7 +14,7 @@ body {
 	background-attachment: fixed;
 
 	/* Dark Filter effect */
-	&:after{
+/*	&:after{
 		content : '';
 		position: absolute;
 		top: 0;
@@ -23,16 +23,15 @@ body {
 		right: 0;
 		z-index: -1;
 		background: rgba(0,0,0,.5);
-	}
+	}*/
 }
 
 
 //border box borrowed from responsive.gs
-//Not necessary if using neat
-// * { -webkit-box-sizing: border-box;
-// 	-moz-box-sizing: border-box;
-// 	box-sizing: border-box;
-// }
+* { -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 
 h1,
