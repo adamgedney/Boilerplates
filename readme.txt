@@ -7,11 +7,19 @@ Boilerplates for:
 
 
 
+//Remove large files from commits
+git filter-branch --tree-filter 'rm Cross.mov' HEAD
+git push origin master --force
+
+    git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch sites.zip" -- --all
+
+
 
     Git Shortcuts:
 
     //Remove staged commits
     git stash save --keep-index
+
 
 
 
@@ -21,3 +29,7 @@ Boilerplates for:
 
     //Calculate slider percentage (Backward from 100)
     aps.percentage = Math.floor(((range.trRight - range.trLeft) - (range.thX - range.trLeft)) / (range.trRight - range.trLeft) * 100);
+
+
+
+
