@@ -1,31 +1,11 @@
 /* ======================================= */
-/* General/Container */
+/* Header */
 /* ======================================= */
 header{
-	overflow: hidden;
-	padding: 18px 2%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 19px;
+	background: rgba(0,0,0,0.4);
 
-	h1{
-		font-weight: 100;
-		color: $link;
-		display: inline-block;
-	}
-
-	nav{
-		float: right;
-
-		ul{
-			li{
-				display: inline-block;
-				margin-left: 18px;
-			}
-		}
-	}
-}
-
-.sign-up{
-	input{
-		display: inline-block;
-		font-size: 1em;
-	}
 }

@@ -1,15 +1,18 @@
 /* ======================================= */
 /* layout */
-/* Reference Bourbon Neat for layout grid */
-/* http://neat.bourbon.io/examples/ */
 /* ======================================= */
 
 .page{
-	.page-inner{
-		@include span-columns(6);
-		@include shift(3);
-		height: 800px;
-		height: 100vh;
+	background: $bg-secondary;
+	min-height: 800px;
+	height: 100vh;
+
+	&:nth-of-type(even){
+		background: $bg;
+	}
+
+	.wrapper{
+
 	}
 }
 
