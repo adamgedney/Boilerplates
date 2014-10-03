@@ -17,3 +17,7 @@ Boilerplates for:
 
     //Remove large files from commit cache
     git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch sites.zip" -- --all
+
+
+    //Calculate slider percentage (Backward from 100)
+    aps.percentage = Math.floor(((range.trRight - range.trLeft) - (range.thX - range.trLeft)) / (range.trRight - range.trLeft) * 100);
