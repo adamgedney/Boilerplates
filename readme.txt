@@ -93,8 +93,9 @@ Install forever: npm install forever -g
 
 
 
-
+//=====================//
 TIPS:
+//=====================//
 remove RSA Host entries (if server changes): ssh-keygen -R <hostname or ip>
 
 check node version: node -v
@@ -112,3 +113,8 @@ FWD port 80 to 3000:
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000
 
 
+
+Check running node processes & kill process:
+lsof -Pi | grep LISTEN
+
+kill -9 3000
