@@ -40,6 +40,9 @@ git push origin HEAD --force
 git config http.postBuffer 52428800
 
 
+//Ignore lareg files with terminal
+find . -size +1G | cat >> .gitignore
+
 
 
 
