@@ -36,6 +36,12 @@ git reset --hard <sha1-commit-id>
 //Force push to get rid of already pushed HEAD
 git push origin HEAD --force
 
+//Increase git http file size limit to prevent signal 13 error
+git config http.postBuffer 52428800
+
+
+
+
 
 
 
