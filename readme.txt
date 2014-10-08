@@ -23,9 +23,18 @@ git stash save --keep-index
 //Drop staged stash
 git stash drop 
 
+//DELETE WORKING DIRECTORY CHANGES!!!!
+git reset --hard HEAD~1
+
+//view commit log
+git log
+
+//DELETE HEAD TO COMMIT
+git reset --hard <sha1-commit-id>
 
 
-
+//Force push to get rid of already pushed HEAD
+git push origin HEAD --force
 
 
 
