@@ -50,6 +50,17 @@ find . -size +1G | cat >> .gitignore
 
 
 
+//===================================================//
+// Bash Tips
+//===================================================//
+//Transfer files from loacl machine to server SSH
+scp PATHNAME_OVER_HERE target-host:/PATHNAME_OVER_THERE
+
+
+
+
+
+
 
 //===================================================//
 // Build Node/Express Server on fresh Ubuntu server
