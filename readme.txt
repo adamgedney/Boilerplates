@@ -56,8 +56,8 @@ find . -size +1G | cat >> .gitignore
 //Transfer files from loacl machine to server SSH
 scp PATHNAME_OVER_HERE target-host:/PATHNAME_OVER_THERE
 
-
-
+//Lowercase all files in this directory and subDs
+for i in $(find ./ -name '*.jpg'); do mv "$i" "$(echo $i|tr A-Z a-z)"; done
 
 
 
