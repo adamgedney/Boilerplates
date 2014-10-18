@@ -40,10 +40,13 @@ git push origin HEAD --force
 git config http.postBuffer 52428800
 
 
-//Ignore lareg files with terminal
+//Ignore large files with terminal
 find . -size +1G | cat >> .gitignore
 
+//Remove all traces of file from repo
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch filename' HEAD
 
+git push origin master --force
 
 
 
