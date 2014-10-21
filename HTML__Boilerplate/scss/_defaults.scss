@@ -12,18 +12,6 @@ body {
 	background: url('../images/church.jpg') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-
-	/* Dark Filter effect */
-/*	&:after{
-		content : '';
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: -1;
-		background: rgba(0,0,0,.5);
-	}*/
 }
 
 
@@ -42,15 +30,15 @@ h4{
 }
 
 h1{
-	font-size: 2.7em; /*18x4*/
+	font-size: 3.4em;
 }
 
 h2{
-	font-size: 2.1em;/*18x3*/
+	font-size: 2.2em;
 }
 
 h3{
-	font-size: 1.8em;/*18x2 - 6*/
+	font-size: 1.8em;
 }
 
 p,
@@ -60,11 +48,9 @@ dl{
 	line-height: 1.5;
 }
 
-a{
-	cursor: pointer;
-}
 
 a{
+	cursor: pointer;
 	text-decoration: none;
 	color: $link;
 	outline: none;
@@ -73,11 +59,16 @@ a{
 
 a:visited{
 	outline: none;
+	color: $link-visited;
 }
 
-a:hover,
-input[type=submit]:hover{
+a:hover{
 	opacity: .5;
+	color: $link-hover;
+}
+
+a:active{
+	color: $link-active;
 }
 
 img{
@@ -92,7 +83,7 @@ textarea{
 	border: 1px solid $bg;
 	color: $bg;
 	background: none;
-	background: rgba(255,255,255,0.1);
+	background: $button-cta;
 	border-radius: 2px;
 	height: 45px;
 	display: inline-block;
@@ -103,22 +94,60 @@ textarea{
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color: $primary-text;
-    font-weight: 100;
+    color: $tertiary-text;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: $primary-text;
-    font-weight: 100;
+    color: $tertiary-text;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: $primary-text;
-    font-weight: 100;
+    color: $tertiary-text;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: $primary-text;
-    font-weight: 100;
+    color: $tertiary-text;
 }
 
+
+
+
+
+
+/* CLEARFIX */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
+
+
+.truncate{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
 
 
 
