@@ -45,11 +45,11 @@ module.exports = function(grunt) {
 
     //Sass configuration
     sass: {
-      dev: {
-        options: {
-          style: 'expanded',
-          compass: true
-        },
+      options: {
+        sourceComments: 'map',
+        outputStyle: 'compressed'
+      },
+      dist: {
         files: {
           'css/main.css': 'scss/main.scss'
         }
@@ -137,7 +137,7 @@ module.exports = function(grunt) {
       //livereload
       livereload: {
         options: {
-          livereload: '<%= connect.options.livereload %>'
+          livereload: true
         },
         files: [
           '{,*/}*.html',
@@ -151,7 +151,7 @@ module.exports = function(grunt) {
       //sass
       sass: {
         files: 'scss/{,*/}*.{scss,sass}',
-        tasks: ['sass:dev', 'cssmin']
+        tasks: ['sass:dist', 'cssmin']
       }//sass
 
 
@@ -179,7 +179,7 @@ module.exports = function(grunt) {
     grunt.task.run([
       // 'connect:livereload',
       'watch',
-      'sass:dev'
+      'sass:dist'
     ]);
   });
 

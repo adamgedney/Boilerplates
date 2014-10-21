@@ -33,3 +33,11 @@ git push origin master --force
 
 
 
+
+sites/default/files/Final-V-&-B-Invite_crop.jpg: needs merge
+sites/default/files/HOUZZ-invite_crop.jpg: needs merge
+sites/default/files/July-Newsletter-with-Border_crop_0.jpg: needs merge
+sites/default/files/June-2014-Newsletter-with-Border_crop.jpg: needs merge
+sites/default/files/LLS-Light-the-Night-8-21-14-Invitation_crop.jpg: needs merge
+sites/default/files/October-Newsletter-with-Border_crop.jpg: needs merge
+
