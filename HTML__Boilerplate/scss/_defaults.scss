@@ -3,15 +3,12 @@
 /* ======================================= */
 body {
 	font: inherit;
-	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 62.5%;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.5em;
-	color: $primary-text;
-	background: url('../images/church.jpg') no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+	color: $text-primary;
 }
 
 
@@ -27,6 +24,8 @@ h2,
 h3,
 h4{
 	line-height: 1.5;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 h1{
@@ -34,11 +33,13 @@ h1{
 }
 
 h2{
-	font-size: 2.2em;
+	font-size: 3.4em;
+	color: $h-text-secondary;
 }
 
 h3{
-	font-size: 1.8em;
+	font-size: 2.2em;
+	font-weight: 600;
 }
 
 p,
@@ -82,9 +83,8 @@ textarea{
 	border: none;
 	border: 1px solid $bg;
 	color: $bg;
-	background: none;
-	background: $button-cta;
-	border-radius: 2px;
+	background: $button;
+	border-radius: 5px;
 	height: 45px;
 	display: inline-block;
 	padding: 9px 21px;
@@ -93,18 +93,35 @@ textarea{
 	outline: none;
 }
 
-::-webkit-input-placeholder { /* WebKit browsers */
-    color: $tertiary-text;
+input{
+	background: $bg;
+	height: 38px;
+	border: 1px solid $border-tertiary;
+
+	-webkit-box-shadow: 0px -1px 0px 0px $border-secondary;
+	   -moz-box-shadow: 0px -1px 0px 0px $border-secondary;
+			box-shadow: 0px -1px 0px 0px $border-secondary;
+
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: $tertiary-text;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: $tertiary-text;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: $tertiary-text;
-}
+
+	::-webkit-input-placeholder { /* WebKit browsers */
+    	color: $text-tertiary;
+    	font-weight: 100;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color: $text-tertiary;
+	    font-weight: 100;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color: $text-tertiary;
+	    font-weight: 100;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	    color: $text-tertiary;
+	    font-weight: 100;
+	}
+
+
 
 
 

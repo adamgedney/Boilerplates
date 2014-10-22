@@ -3,7 +3,9 @@
 // Backgrounds
 //===========================//
 $bg : #fff;
-$bg-secondary : #1d252c;
+$bg-secondary : #eaf1f7;
+$bg-tertiary : #d7e9f1;
+$bg-quat : #8d9da8;
 
 
 
@@ -11,10 +13,10 @@ $bg-secondary : #1d252c;
 //===========================//
 // Links
 //===========================//
-$link: #6987A1;
-$link-visited: #396D9A;
-$link-hover: #396D9A;
-$link-active: #396D9A;
+$link: #4ab2cd;
+$link-visited: #4ab2cd;
+$link-hover: #4ab2cd;
+$link-active: #4ab2cd;
 
 
 
@@ -22,21 +24,25 @@ $link-active: #396D9A;
 //===========================//
 // Type
 //===========================//
-$primary-text: #1d252c;
-$secondary-text: #929292;
-$tertiary-text: #bbbbbb;
+$text-primary: #434c53;
+$text-secondary: #8c9ca8;
+$text-tertiary: #aeb9c0;
 
-$alt-primary-text: #ffffff;
-$alt-secondary-text: #929292;
-$alt-tertiary-text: #bbbbbb;
+$text-primary-alt: #ffffff;
+$text-secondary-alt: #ffffff;
+$text-tertiary-alt: #ffffff;
 
-
+$h-text-primary: #50b1cb;
+$h-text-secondary: #50b1cb;
 
 
 //===========================//
 // Borders
 //===========================//
-$border: #dedede;
+$border-primary: #8d9da8;
+$border-secondary: #b9cad6;
+$border-tertiary: #d8e1e5;
+
 
 
 
@@ -44,8 +50,10 @@ $border: #dedede;
 //===========================//
 // Buttons
 //===========================//
-$button-cta : #000000;
-$button-secondary : #000;
+$button-cta-start: #f75231;
+$button-cta-end: #df4222;
+$button-cta-border: #b7371d;
+$button: #50b1cb;
 
 
 
@@ -56,6 +64,9 @@ $button-secondary : #000;
 $go: #53be97;
 $warning: #7ac83c;
 $danger: #c20430;
+
+$icon : #4e5961;
+$icon-secondary : #50b1cb;
 
 
 
