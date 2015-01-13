@@ -48,8 +48,8 @@ git filter-branch --index-filter 'git rm --cached --ignore-unmatch filename' HEA
 
 git push origin master --force
 
-
-
+//Edit the last commit message
+git commit --amend -m "New commit message"
 
 
 
