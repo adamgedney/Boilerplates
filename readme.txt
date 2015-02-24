@@ -46,6 +46,9 @@ find . -size +1G | cat >> .gitignore
 //Remove all traces of file from repo
 git filter-branch --index-filter 'git rm --cached --ignore-unmatch filename' HEAD
 
+//Remove all traces of folder form repo
+git filter-branch --tree-filter 'rm -rf foldername' HEAD
+
 git push origin master --force
 
 //Edit the last commit message
