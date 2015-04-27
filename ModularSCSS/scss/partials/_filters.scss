@@ -1,0 +1,82 @@
+// http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+// .block__element--modifiers
+
+// Only use BEM where SCOPE is required
+
+// modifiers = state (is-open/is-closed): hidden/expanded, open/closed, active/inactive, large/small, success/error
+// modifiers indicate a javascript dependency
+
+// Use SMACSS submodule pattern when modifying particular cases of a module
+// o-filters__select--last o-filters__select--featured
+
+
+
+/*
+* Used with /js/partials/filters.js
+*/
+.o-filters{
+	// outer container
+}
+
+// General select and option styles for the filters block/selects element
+.o-filters__selects{
+  select{
+	option{
+
+	}
+  }
+}
+
+.o-filters__select--first{
+	// modified select
+}
+
+.o-filters__select--featured{
+  // modified select -feature it
+}
+
+.o-filters__select--last{
+	// modified select
+}
+
+.o-filters__radios{
+  label{
+
+  }
+  input[type=radio]{
+
+  }
+}
+
+<div class="o-filters">
+	<form>
+	 	<fieldset class="o-filters__selects">
+			<select class="o-filters__select--first">
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			</select>
+
+			<select class="o-filters__select--featured">
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+			</select>
+
+			<select class="o-filters__select--last o-filters__select--featured">
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+			</select>
+		</fieldset>
+
+		<fieldset class="o-filters__radios">
+			<label>Male
+				<input type="radio" name="sex" value="male">
+			</label>
+			<label>Female
+				<input type="radio" name="sex" value="female">
+			</label>
+		</fieldset>
+	 </form>
+</div>

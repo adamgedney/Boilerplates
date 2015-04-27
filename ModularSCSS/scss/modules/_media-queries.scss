@@ -1,0 +1,28 @@
+@mixin break-xs {
+  @media only screen and (max-width: 479px) {
+    @content;
+  }
+}
+
+@mixin break-sm{
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin break-md{
+  @media only screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin break-lg {
+  @media only screen and (max-width: 1365px) {
+    @content;
+  }
+}
+
+
+
+
+
