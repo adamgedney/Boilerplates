@@ -3,13 +3,15 @@ module.exports = function(grunt) {
   //Creates a reference to the package obj
   var pkg = require('./package.json');
 
+  // BASE_PATH variable (in WP this is the theme folder)
+  // File assumes there is an scss and css folder in this directory
+  var BASE_PATH = './wp-content/themes/olympusat-kocka-child';
+
+
 
   // Checks the dependencies associated with Grunt, autoloads
   // & requires ALL of them in this Gruntfile
   require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
-
-
-
 
 
 
@@ -38,7 +40,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          './wp-content/themes/olympusat-kocka-child/css/main.css': './wp-content/themes/olympusat-kocka-child/scss/main.scss'
+          './wp-content/themes/olympusat-kocka-child/css/main.css': BASE_PATH + '/scss/main.scss'
         }
       }
     },//sass
@@ -62,9 +64,9 @@ module.exports = function(grunt) {
     cssmin: {
       minify: {
         expand: true,
-        cwd: './wp-content/themes/olympusat-kocka-child/css/',
+        cwd: BASE_PATH + '/css/',
         src: ['*.css', '!*.min.css'],
-        dest: './wp-content/themes/olympusat-kocka-child/css/',
+        dest: BASE_PATH + '/css/',
         ext: '.min.css'
       }
     },//cssmin
@@ -79,7 +81,7 @@ module.exports = function(grunt) {
 
       //sass
       sass: {
-        files: ['./wp-content/themes/olympusat-kocka-child/{,*/}{,*/}*.{scss,sass}'],
+        files: [BASE_PATH + '/{,*/}{,*/}*.{scss,sass}'],
         tasks: ['sass:dist', 'cssmin'],
         options: {
           // Livereload requires the chrome extension LiveReload to be running
