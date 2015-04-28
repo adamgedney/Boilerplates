@@ -21,17 +21,6 @@ module.exports = function(grunt) {
       BASE_PATH : './wp-content/themes/olympusat-kocka-child'
     },
 
-    //connect settings. used in grunt serve
-    connect: {
-      options: {
-        port: 9000,
-        // Change this to '0.0.0.0' to access the server from outside.
-        hostname: 'localhost'
-      }
-    },//connect
-
-
-
 
     //Sass configuration
     sass: {
@@ -47,20 +36,6 @@ module.exports = function(grunt) {
     },//sass
 
 
-
-    //compass -required for autoprefixer
-    compass: {
-      options: {
-      },
-      server: {
-        options: {
-          debugInfo: true
-        }
-      }
-    },//compass
-
-
-
     //cssmin -minify css file
     cssmin: {
       minify: {
@@ -71,10 +46,6 @@ module.exports = function(grunt) {
         ext: '.min.css'
       }
     },//cssmin
-
-
-
-
 
 
     //Watches files and folders for us
