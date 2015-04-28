@@ -1,4 +1,17 @@
-
-node_modules/
-
 .DS_Store
+node_modules/
+/scss/.sass-cache/
+.idea
+
+
+# OS generated files #
+######################
+*/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
