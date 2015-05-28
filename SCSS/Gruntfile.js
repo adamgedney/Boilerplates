@@ -43,7 +43,8 @@ module.exports = function(grunt) {
     //cssmin -minify css file
     cssmin: {
       options: {
-        sourceMap: true
+        sourceMap: true,
+        target: '<%= options.BASE_PATH %>/css/'
       },
       minify: {
         expand: true,
