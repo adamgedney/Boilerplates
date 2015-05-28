@@ -15,6 +15,8 @@
 4. Open terminal to your wp-content folder.
 5. Run: sudo npm install (this adds a node_moduels folder. Already Excluded from the repo by the .gitignore file)
 
+Gotchas: If you get a libsass error when trying to run sudo npm install, run sudo npm install grunt-sass. THis manually installs grunt-sass/libsass compiler
+
 
 *******************************************************************
 ** Configuring and running the Grunt sass compiler w/ LiveReload **
@@ -25,3 +27,5 @@
 4. From terminal, at /wp-content RUN: grunt watchyoursass
 	NOTE: This starts the node server, watches all your scss files, and live reloads your browser when the main.min.css files changes.
 		To use LiveReload, you must install the Chrome Extension "LiveReload". When the extension has been added to your browser toolbar, click it to run it for the webpage you want to LiveReload.
+
+

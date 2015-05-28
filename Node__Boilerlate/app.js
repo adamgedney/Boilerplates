@@ -4,7 +4,7 @@ var fs          = require('fs');
 var path        = require('path');
 
 //Export app to project
-var app = module.exports = express();
+app = module.exports = express();
 
 
 //Enables body parser for POST form data handling with req.body.

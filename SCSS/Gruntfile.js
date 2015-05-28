@@ -18,7 +18,8 @@ module.exports = function(grunt) {
     options: {
       // BASE_PATH variable (in WP this is the theme folder)
       // File assumes there is an scss and css folder in this directory
-      BASE_PATH : './wp-content/themes/olympusat-kocka-child'
+      //BASE_PATH : './wp-content/themes/olympusat-kocka-child'
+      BASE_PATH : '.'
     },
 
 
@@ -48,13 +49,23 @@ module.exports = function(grunt) {
     },//cssmin
 
 
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 versions', 'safari 5', 'ie 6', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
+      },
+      single_file: {
+        src: '<%= options.BASE_PATH %>/css/main.css'// Sets src and destination to the same
+      }
+    },
+
+
     //Watches files and folders for us
     watch: {
 
       //sass
       sass: {
         files: ['<%= options.BASE_PATH %>/{,*/}{,*/}*.{scss,sass}'],
-        tasks: ['sass:dist', 'cssmin'],
+        tasks: ['sass:dist', 'cssmin', 'autoprefixer'],
         options: {
           // Livereload requires the chrome extension LiveReload to be running
           livereload: true
