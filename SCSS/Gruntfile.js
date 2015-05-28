@@ -6,7 +6,10 @@ module.exports = function(grunt) {
 
   // Checks the dependencies associated with Grunt, autoloads
   // & requires ALL of them in this Gruntfile
-  require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
+  //require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
+
+  // Just in Time loader of packages
+  require('jit-grunt')(grunt);
 
 
 
@@ -49,6 +52,7 @@ module.exports = function(grunt) {
     },//cssmin
 
 
+    // Autoprefixer - prefix moder css where needed by reference to caniuse.com DB
     autoprefixer: {
       options: {
         browsers: ['last 2 versions', 'safari 5', 'ie 6', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
@@ -59,13 +63,22 @@ module.exports = function(grunt) {
     },
 
 
+    // Uglify js files
+    uglify: {
+      dist: {
+        files: {
+          '<%= options.BASE_PATH %>/js/main.min.js': ['<%= options.BASE_PATH %>/js/main.js']
+        }
+      }
+    },
+
+
     //Watches files and folders for us
     watch: {
-
       //sass
       sass: {
-        files: ['<%= options.BASE_PATH %>/{,*/}{,*/}*.{scss,sass}'],
-        tasks: ['sass:dist', 'cssmin', 'autoprefixer'],
+        files: ['<%= options.BASE_PATH %>/{,*/}{,*/}*.{scss,sass}','<%= options.BASE_PATH %>/js/*.js'],
+        tasks: ['sass:dist', 'cssmin', 'autoprefixer', 'uglify'],
         options: {
           // Livereload requires the chrome extension LiveReload to be running
           livereload: true
