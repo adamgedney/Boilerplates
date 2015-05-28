@@ -29,8 +29,8 @@ module.exports = function(grunt) {
     //Sass configuration
     sass: {
       options: {
-        sourceComments: 'map',
-        outputStyle: 'compressed'
+        sourceMap : true,
+        sourceComments: 'map'
       },
       dist: {
         files: {
@@ -42,6 +42,9 @@ module.exports = function(grunt) {
 
     //cssmin -minify css file
     cssmin: {
+      options: {
+        sourceMap: true
+      },
       minify: {
         expand: true,
         cwd: '<%= options.BASE_PATH %>/css/',
@@ -72,13 +75,18 @@ module.exports = function(grunt) {
       }
     },
 
+    jshint: {
+      all: [
+        '<%= options.BASE_PATH %>/js/main.js'
+      ]
+    },
+
 
     //Watches files and folders for us
     watch: {
-      //sass
       sass: {
-        files: ['<%= options.BASE_PATH %>/{,*/}{,*/}*.{scss,sass}','<%= options.BASE_PATH %>/js/*.js'],
-        tasks: ['sass:dist', 'cssmin', 'autoprefixer', 'uglify'],
+        files: ['<%= options.BASE_PATH %>/{,*/}{,*/}*.{scss,sass}','<%= options.BASE_PATH %>/js/main.js'],
+        tasks: ['sass', 'cssmin', 'autoprefixer','jshint','uglify'],
         options: {
           // Livereload requires the chrome extension LiveReload to be running
           livereload: true
@@ -108,7 +116,7 @@ module.exports = function(grunt) {
   grunt.registerTask('watchyoursass', function (target) {
 
     grunt.task.run([
-      'watch',
+      'watch'
     ]);
   });
 
