@@ -59,7 +59,7 @@ module.exports = function(grunt) {
     // Autoprefixer - prefix moder css where needed by reference to caniuse.com DB
     autoprefixer: {
       options: {
-        browsers: ['last 2 versions', 'safari 5', 'ie 6', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
+        browsers: ['last 2 versions', 'safari 5','ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
       },
       single_file: {
         src: '<%= options.BASE_PATH %>/style.css'// Sets src and destination to the same
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['<%= options.BASE_PATH %>/{,*/}{,*/}*.{scss,sass}'],
-        tasks: ['sass','autoprefixer','cssmin'],
+        tasks: ['sass:dist','autoprefixer'],//'cssmin:minify' <-- slows down livereload > 1s, use only if needed
         options: {
           livereload: false // Livereload requires the chrome extension LiveReload to be running
           // to use on https pass path to cert
