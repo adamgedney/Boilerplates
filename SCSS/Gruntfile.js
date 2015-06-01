@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-            '<%= options.BASE_PATH %>/style.css': '<%= options.BASE_PATH %>/scss/main.scss'
+          '<%= options.BASE_PATH %>/style.css': '<%= options.BASE_PATH %>/scss/main.scss'
         }
       }
     },//sass
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['<%= options.BASE_PATH %>/{,*/}{,*/}*.{scss,sass}'],
-        tasks: ['sass','cssmin', 'autoprefixer'],
+        tasks: ['sass','autoprefixer','cssmin'],
         options: {
           livereload: false // Livereload requires the chrome extension LiveReload to be running
           // to use on https pass path to cert
@@ -111,7 +111,7 @@ module.exports = function(grunt) {
         }
       }
     }// watch
-  //=========================================//
+    //=========================================//
   });//grunt.initConfig
   //=========================================//
 
