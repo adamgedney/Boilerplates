@@ -23,6 +23,7 @@
 }
 
 
+
 // New media queries using mapping
 //@include break(xs) {
 //  color: tomato;
@@ -41,11 +42,15 @@ $breakpoints: (
     }
   }
 
+    // Custom breakpoint
   @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Please make sure it is defined in `$breakpoints` map.";
+    @media (max-width: #{$breakpoint}) {
+      @content;
+    }
   }
 }
+
+
 
 
 
