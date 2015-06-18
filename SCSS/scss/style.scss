@@ -15,14 +15,14 @@
 //@import "modules/grid";
 //@import "modules/media-queries";
 //@import "modules/util";
-@import "modules/base-rules";
+//@import "modules/base-rules";
 
 //@import "modules/animations";
 //@import "modules/clearfix";
 
 /* Partials */
 //@import "partials/typography";
-//@import "partials/buttons";
+@import "partials/buttons";
 //@import "partials/placeholders";
 //@import "partials/header";
 //@import "partials/footer";

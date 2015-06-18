@@ -1,0 +1,13 @@
+/* Vendor */
+/* Modules */
+/* Partials */
+/* ======================================= */
+/* Buttons */
+/* ======================================= */
+footer {
+  background: blue;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
+
+header h1 {
+  color: purple; }

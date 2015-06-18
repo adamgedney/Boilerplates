@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     options: {
       // BASE_PATH variable (in WP this is the theme folder)
       // File assumes there is an scss and css folder in this directory
-      BASE_PATH : './wp-content/themes/olympusat-kocka-child'
+      BASE_PATH : './'
     },
 
 
