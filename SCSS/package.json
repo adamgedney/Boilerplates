@@ -4,7 +4,6 @@
   "description": "",
   "main": "",
   "devDependencies": {
-    "babelify": "^6.1.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-babel": "^5.1.0",
@@ -18,9 +17,8 @@
     "gulp-sass": "^2.0.1",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "^1.2.0",
-    "gulp-watch": "^4.2.4",
-    "vinyl-source-stream": "^1.1.0",
-    "vinyl-transform": "^1.0.0"
+    "gulp-watch": "^4.2.4"
+
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
