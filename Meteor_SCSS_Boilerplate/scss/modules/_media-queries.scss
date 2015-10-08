@@ -1,0 +1,58 @@
+@mixin break-xs {
+  @media only screen and (max-width: 479px) {
+    @content;
+  }
+}
+
+@mixin break-sm{
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin break-md{
+  @media only screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin break-lg {
+  @media only screen and (max-width: 1365px) {
+    @content;
+  }
+}
+
+
+
+// New media queries using mapping
+//@include break(xs) {
+//  color: tomato;
+//}
+$breakpoints: (
+    xs: 479px,
+    sm: 767px,
+    md: 1023px,
+    lg: 1365px
+);
+
+@mixin break($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+
+    // Custom breakpoint
+  @else {
+    @media (max-width: #{$breakpoint}) {
+      @content;
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+*{
+ box-sizing: border-box;
+}
+
+body,input,select,textarea,h1,h2,h3,h4,h5,p,ul,li,a{
+ font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+ul{
+ padding: 0;
+}
+
+p{
+ -webkit-margin-before: 0;
+ -webkit-margin-after: 0;
+ -webkit-margin-start: 0px;
+ -webkit-margin-end: 0px;
+}

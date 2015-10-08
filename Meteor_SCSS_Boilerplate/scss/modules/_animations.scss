@@ -1,0 +1,28 @@
+// General duration shortcut
+@mixin duration($time: .7s){
+  -webkit-transition-duration: $time;
+     -moz-transition-duration: $time;
+       -o-transition-duration: $time;
+      -ms-transition-duration: $time;
+		  transition-duration: $time;
+}
+
+// Google Material Design inspired shadow
+@mixin materialZ($opacity:0.75){
+  // Material Z shadow
+  -webkit-box-shadow: 1px 0px 25px 2px rgba(26,26,26,$opacity);
+     -moz-box-shadow: 1px 0px 25px 2px rgba(26,26,26,$opacity);
+          box-shadow: 1px 0px 25px 2px rgba(26,26,26,$opacity);
+}
+
+// Transition shortcut
+// @include transition(left,1000,linear);
+@mixin transition($property,$time,$curve,$delay:0){
+  -webkit-transition: $property $time $curve $delay;
+     -moz-transition:  $property $time $curve $delay;
+       -o-transition:  $property $time $curve $delay;
+      -ms-transition:  $property $time $curve $delay;
+          transition:  $property $time $curve $delay;
+}
+
+
